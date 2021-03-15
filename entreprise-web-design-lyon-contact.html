@@ -82,29 +82,29 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!" role="group" aria-labelledby="coordonees" >
 					<div class="form-group">
-						<label>
+						<label for="nom">
 							Nom
 						</label>
-						<input id="name" class="form-control" placeholder="John DOE" required />
+						<input id="name" class="form-control" name="nom" placeholder="John DOE" required aria-required=true />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="mail">
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" placeholder="john.doe@gmail.com" required />
+						<input id="email" class="form-control" type="email" name="mail" placeholder="john.doe@gmail.com" required aria-required=true />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="source">
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="email" required id="input_504" placeholder="Internet, presse, bouche à oreille" />
+						<input class="form-control" type="email" required aria-required=true id="input_504" name="source" placeholder="Internet, presse, bouche à oreille" />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="details">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</label><textarea id="message" class="form-control" rows="4" cols="50" name="details" required aria-required=true></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
@@ -137,22 +137,22 @@
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="#" aria-label="Retrouvez nous sur Twitter"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="#" aria-label="Retrouvez nous sur Facebook"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="#" aria-label="Retrouvez nous sur Dribbble"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="#" aria-label="Retrouvez nous sur Instagram"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
